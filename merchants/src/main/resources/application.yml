@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: ZhangyuMerchants
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/passbook?autoReconnect=true
+    username: root
+    password: zyzzhkht
+  kafka:
+    bootstarp-servers: 127.0.0.1:9002
+    consumer:
+      group-id: passbook
+    listener:
+      concurrency: 4
+server:
+  port: 9527
+logging:
+  level: debug
+  file: zhangyu-merchants.log
+
